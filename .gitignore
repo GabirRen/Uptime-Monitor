@@ -1,0 +1,40 @@
+# Environment
+.env
+.env.*
+!.env.example
+
+# PHP / Laravel (api/)
+api/vendor/
+api/node_modules/
+api/.phpunit.cache/
+api/.phpunit.result.cache
+api/storage/*.key
+api/storage/app/*
+!api/storage/app/.gitkeep
+api/storage/framework/cache/*
+!api/storage/framework/cache/.gitkeep
+api/storage/framework/sessions/*
+!api/storage/framework/sessions/.gitkeep
+api/storage/framework/testing/*
+!api/storage/framework/testing/.gitkeep
+api/storage/framework/views/*
+!api/storage/framework/views/.gitkeep
+api/storage/logs/*
+!api/storage/logs/.gitkeep
+api/bootstrap/cache/*
+!api/bootstrap/cache/.gitignore
+
+# Go (worker/)
+worker/worker
+worker/*.exe
+
+# Node / Vite (app/)
+app/node_modules/
+app/dist/
+app/.vite/
+
+# Editors / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
